@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:1000px;
+            height:400px;
+           display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            position:relative;
+            margin: 0 auto;
+            padding: 10px;
+            perspective: 400px;
+            border: 1px solid black;
+            justify-items: center ;
+           /* align-items: start ;*/
+            
+        }
+      
+       
+       
+        .card{
+            width: 80%;
+            height: 75%;
+            transform-style:preserve-3d;
+        
+            transition: transform 2s;
+            
+
+        }
+
+        .card:hover{
+            transform:rotateY(180deg); /*skew(50deg);
+            transform: skew(10deg);*/
+        }
+        .front{
+            
+            width: 100%;
+            height:100%;
+            position:absolute;
+           
+        }
+        .back{
+            width: 100%;
+            height:100%;
+            background:burlywood;
+            transform: rotateY(180deg);
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1,h3{
+            text-align: center;
+        }
+        body{
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Famous Places In Pune</h1>
+    <div class="container">
+       
+        <div class="card">
+            <div class="front">
+               <img src="shanivarwada.jpg">
+            </div>
+            <div class="back">
+                <h3>Shaniwar wada</h3>
+               <p>The Shaniwarwada was normally the seven-storey capital building of the Peshwas of the Maratha Empire. It was supposed to be made entirely of stone but after the completion of the base floor or the first storey, the people of Satara (the national capital) complained to the Shahu(King) saying that a stone monument can be sanctioned and built only by the Shahu(King) himself and not the Peshwas. Following this, an official letter was written to the Peshwas stating that the remaining building had to be made of brick and not stone. Even today if you visit and see the walls carefully, they are partly made of stone and partly by bricks. The Wada was then completed and upon being attacked by the British Artillery 90 years later, all the top six stories collapsed leaving only the stone base, which was immune to the British artillery. Hence only the stone base of the Shaniwar Wada remains and can be seen even today in the older parts of Pune.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="front">
+               <img src="pld.jpg">
+            </div>
+            <div class="back">
+                <h3>Pu La Deshpande Garden</h3>
+               <p>The garden was inspired by the 300-year-old Kōraku-en Garden in Okayama, so it is also called the Pune-Okayama Friendship Garden. The garden has naturally flowing water from a canal, and this flow has been spread across the garden. The garden is well maintained, and walking on the lawn is not allowed. The garden is built on 10 acres. The style is devised in such a way that people can take a walk through a garden enjoying the landscape, which changes along the garden paths. Visitors can see colourful fish from on top of a small bridge in the center of garden. This Japanese garden has been named after Pu La Deshpande, a well known Marathi writer from Maharashtra, India.</p>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="front">
+               <img src="katrajzoo.jpg">
+            </div>
+            <div class="back">
+                <h3>Rajiv Gandhi zological Park</h3>
+               <p>The zoo has collections of reptiles, mammals, and birds. Among mammals, the zoo has a white tiger and a male Bengal tiger named Tanaji. Other mammals at the zoo include leopard, sloth bears, sambhars, barking deer, blackbucks, monkeys, and elephants. Reptiles include Indian rock python, cobra, snakes, vipers, Indian crocodiles and Indian star tortoise and birds such as peafowl also feature.
+
+                The snake park has a large collection of snakes, reptiles, birds and turtles. There are over 22 species of snakes with 10 species of reptiles comprising more than 150 individuals. This includes a 13-foot-long king cobra. Information about the snakes is provided in Braille, as well as more conventional formats, and the park includes a library. The snake park has organized many snake festivals and snake awareness programs to clarify doubts and destroy fears about snakes. During Nag Panchami, the park arranges programs to discourage ill-treatment of snakes.</p>
+            </div>
+        </div>
+    </div>   
+    
+    
+    
+</body>
+</html>
