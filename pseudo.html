@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documsent</title>
+    <style>
+        /*Pseudo class*/
+        article ul li:first-child{
+            background-color: brown;
+        }
+        article ul li:last-child{
+            background-color: chocolate;
+        }
+        article p:first-of-type{
+            color: red;
+        }
+        article p:last-of-type{
+            background-color: blue;
+        }
+        p:only-child{
+            background-color: blue;
+        }
+        article ul li:nth-child(6){
+            background-color: coral;
+        }
+        article ul li:nth-last-child(5){
+            background-color: darkgray;
+        }
+        /*pseudo element*/
+        article p::first-letter{
+            font-size: 40px;
+            color: black;
+        }
+        article p::first-line{
+            color:yellow;
+            font-variant: small-caps;
+        }
+        article ul li::before{
+            content:url("smiley.jpg");
+        
+        }
+        article ul li::after{
+            content:"=<"
+        }
+       article::selection{
+
+           color: tomato;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <H3>only child</H3>
+    <span><p>FULL STACK</p></span>
+    <span><p>WEB Development</p></span>
+    <section class="Pseudo">
+        <article>
+            
+            <h1>Pseudo Class</h1>
+            <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+            <p>A pseudo-class is used to define a special state of an element.The ::first-letter Pseudo-element
+
+                The ::first-letter pseudo-element is used to add a special style to the first letter of a text.</p>
+
+               <p> For example, it can be used to:</p>
+                
+                    <p>Style an element when a user mouses over it</p>
+                    <i>Style visited and unvisited links differently</i>
+                   <h4>Style an element when it gets focus</h4>
+                
+        
+                   
+                
+            <ul>
+            <li>First Child</li>
+            <li>Last Child</li>
+            <li>Only child</li>
+            <li>First-of-type</li>
+            <li>Last-of-type</li> 
+            <li>nth-child</li>
+            <li>nth-last-child</li>
+        </ul>
+        </article>
+        
+    </section>
+</body>
+</html>
