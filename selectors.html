@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <style>
+        /*Basic Selectors id,class*/
+            #para1{
+                color:red;
+                text-align:center;
+            
+            }
+            .CSS{
+                color:brown;
+                text-align:center;
+            }
+            #para2{
+                color:darkorange;
+            }
+            [id ^="para"]{
+                border:3px solid black;
+            }
+            [id $="tent"]{
+                border:2px dashed yellowgreen;
+            }
+            [id ~="heading"]{
+                border:1px dashed black;
+            }
+            a:link{
+                color:red;
+            }
+            a:visited{
+                color:blue;
+            }
+            a:hover{
+                color:black;
+            }
+            a:active{
+                color:blueviolet;
+            }
+            section{
+                background:whitesmoke;
+            }
+            /*i,p{
+                font-size: smaller;
+                background-color: orange;
+            }*/
+           .maincontent > article > h2{
+             background-color: blue;
+           }
+           
+    
+           .maincontent > article > div + i{
+               font-weight: bolder;
+           }
+           
+           .maincontent > article  > h2 ~ i{
+               background-color:red ;
+           
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="CSS">Selectors</h1>
+    </header>
+    <main class ="container">
+
+<section class="maincontent">
+    <article>
+
+   
+        <p>codekul</p> 
+        <p id="para1">Types of Selectors</p>
+        <p id="para2">id selector</h2>
+        <h5 id="para3">Element Selector</h5>
+        <p id="content">A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.</p>
+        <h3 id="heading">The id selector uses the id attribute of an HTML element to select a specific element.</h3>
+        <h2>HELLO</h2>
+        <div>
+            <i>FULL STACK WEB Development</i>
+        </div>
+        <i>CODEKUL</i><br>
+        <i>HIII</i>
+        <p id="heading">To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+    
+    </article>
+</section>
+
+
+            <i>The class selector selects HTML elements with a specific class attribute.
+
+                To select elements with a specific class, write a period (.) character, followed by the class name.</i>
+           
+           <section class="article content">
+               <article>
+                <h3>Types of Selectors</h3>
+            <ul type="circle">
+                <li><a href="page.html" target="_blank">Information about selecors</a></li>
+                <li>ID/li>
+                <li>Class</li>
+                <li>Attribute</li>
+                <li>Element</li>
+                <li>Combinator</li>
+
+            </ul>
+
+           
+    </article>
+</section>
+</body>
+</html>
