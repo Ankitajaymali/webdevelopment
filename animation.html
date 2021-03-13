@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+
+<style>
+    body{
+        margin: 0;
+        background-size: cover;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        overflow-y: hidden;
+    }
+
+        .night{
+        height: 500px;
+        width: 900px;
+        border: 1px solid black;
+        margin: 5rem auto;
+       
+        position: relative;
+        overflow-x: hidden;
+        }
+    
+    .surface{
+            height: 600px;
+            width: 900px;
+            background: url(road.jpg);
+            background-size: cover;
+            display: block;
+            position: absolute;
+            animation:road 15s linear infinite;
+         bottom: 0px;
+        z-index: -1;
+        /* background-repeat: repeat-x;*/
+    }
+   /* @keyframes road{
+        100%{transform:translate(-2000px);}
+        */
+    
+    .car{
+        position: absolute;
+        bottom: 180px;
+        animation: moveright 15s linear infinite;
+            background-repeat: repeat-x;
+            
+        
+    }
+
+        @keyframes moveright{
+            100%{transform: translateX(900px);}
+        }
+
+
+
+
+
+</style>
+</head>:
+<body>
+   
+    <div class="night">
+            <div class="surface"></div>
+                    <div class="car">
+                        <img src="car.jpg">
+                    </div>
+            
+    </div>
+</body>
+</html>
