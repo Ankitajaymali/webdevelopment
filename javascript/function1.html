@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+
+
+
+        function time(num){
+            var hours=(num/60)
+            var minutes= (num%60)
+            var seconds = (num-minutes)*60
+            return hours + ":" + minutes+":"+ seconds
+        }
+
+        console.log(time(60))
+        console.log(time(200))
+        console.log(time(1400))
+        console.log(time(125))
+
+
+      
+
+    </script>
+</body>
+</html>
