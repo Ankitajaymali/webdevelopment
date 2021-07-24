@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //The splice() method can be used to add new items to an array:
+        //The first parameter (2) defines the position where new elements should be added (spliced in).
+        //The second parameter (0) defines how many elements should be removed.
+        //The rest of the parameters ( "Kiwi","watermelon") define the new elements to be added.
+        
+        var a= ["Banana", "Orange", "Apple", "Mango"];
+        //a.splice(2,0,"kiwi","watermelon")
+       
+        a.splice(0,1)
+
+        //splice() to remove elements without leaving "holes" in the array:
+        //The first parameter (0) defines the position where new elements should be added (spliced in).
+        //The second parameter (1) defines how many elements should be removed.
+        //The rest of the parameters are omitted. No new elements will be added.
+        document.write(a)
+    
+    </script>
+</body>
+</html>
